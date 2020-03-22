@@ -2,7 +2,10 @@ version: "3"
 
 networks:
   loki:
-
+  
+volumes:
+    loki-data:
+    
 services:
   loki:
     image: grafana/loki:latest
